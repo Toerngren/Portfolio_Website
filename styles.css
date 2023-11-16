@@ -6,11 +6,28 @@
 }
 
 .menu-bar {
-    background-color: #006400;
+    list-style-type: none;
+    display: flex;
+    justify-content: left; 
+    align-items: center; /* Center the menu items vertically */
+    padding-left: 50px;
+}
+
+.menu-bar li {
+    display: inline-block;
 }
 
 .menu-bar a {
-    color: white;
+    display: block;
+    padding: 50px 15px;
+    font-size: 20px;
+    text-decoration: none; /* Remove the underline from links */
+    color: black;
+}
+
+.menu-bar a::first-letter {
+    font-weight: bold;
+    /*color: rgb(199, 85, 14); */
 }
 
 #site-footer {
