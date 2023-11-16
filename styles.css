@@ -1,3 +1,10 @@
+/* Nollställer */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .menu-bar {
     background-color: #006400;
 }
@@ -9,4 +16,13 @@
 #site-footer {
     background-color: #333;
     color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 5px;
+}
+
+body {
+    background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), url('scr/lindholmen.jpg') no-repeat center center fixed;
+    background-size: cover;
 }
