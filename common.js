@@ -2,10 +2,10 @@ document.addEventListener('DOMContentLoaded', function() {
     let navbar = `
     <nav class="menu-bar">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="skills.html" class="nav-link">Skills</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
     </nav>
     `;
@@ -16,12 +16,21 @@ document.addEventListener('DOMContentLoaded', function() {
     </footer>
     `;
 
-    // Ensure that the placeholders exist before attempting to insert HTML
-    if (document.querySelector('#navbar-placeholder')) {
-        document.querySelector('#navbar-placeholder').innerHTML = navbar;
-    }
+    // Insert the navbar and footer HTML
+    document.querySelector('#navbar-placeholder').innerHTML = navbar;
+    document.querySelector('#footer-placeholder').innerHTML = footer;
 
-    if (document.querySelector('#footer-placeholder')) {
-        document.querySelector('#footer-placeholder').innerHTML = footer;
-    }
+    // Function to set the 'active' class on the current page's nav link
+    const setNavLinkActive = () => {
+        const navLinks = document.querySelectorAll('.nav-link');
+        const currentPage = window.location.pathname.split('/').pop();
+
+        navLinks.forEach(link => {
+            if(link.getAttribute('href') === currentPage) {
+                link.classList.add('active');
+            }
+        });
+    };
+
+    setNavLinkActive();
 });

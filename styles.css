@@ -30,6 +30,11 @@
     /*color: rgb(199, 85, 14); */
 }
 
+.nav-link.active {
+    font-weight: bold;
+    color: orange;
+}
+
 #site-footer {
     background-color: #333;
     color: white;
