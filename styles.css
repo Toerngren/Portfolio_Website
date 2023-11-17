@@ -8,8 +8,9 @@
 .menu-bar {
     list-style-type: none;
     display: flex;
-    justify-content: left; 
-    align-items: center; /* Center the menu items vertically */
+    justify-content: left;
+    align-items: center;
+    /* Center the menu items vertically */
     padding-left: 50px;
 }
 
@@ -21,7 +22,8 @@
     display: block;
     padding: 50px 15px;
     font-size: 20px;
-    text-decoration: none; /* Remove the underline from links */
+    text-decoration: none;
+    /* Remove the underline from links */
     color: black;
 }
 
@@ -48,3 +50,56 @@ body {
     background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), url('scr/lindholmen.jpg') no-repeat center center fixed;
     background-size: cover;
 }
+
+form {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 50px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+label,
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    resize: none;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+.contact-container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px; /* Adjust as needed */
+}
+
+.contact-form {
+    flex: 1;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background for form */
+    color: white;
+    border-radius: 10px 0 0 10px; /* Rounded corners on the left side */
+}
+
+.contact-info {
+    flex: 1;
+    padding: 20px;
+    background-color: white; /* Light background for contact info */
+    color: black;
+    border-radius: 0 10px 10px 0; /* Rounded corners on the right side */
+}
+
