@@ -30,6 +30,22 @@ h1 {
     text-transform: uppercase;
 }
 
+h2 {
+    color: #333;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+h3 {
+    color: #df9412;
+    font-size: 16px;
+}
+
+ul {
+    font-size: 14px;
+    
+}
+
 #p-LandingPage1 {
     color: #333;
     text-align: left;
@@ -221,3 +237,91 @@ input[type="submit"]:hover {
     opacity: 1;
 }
 
+.icon-before-text {
+    vertical-align: middle;
+    margin-right: 10px;
+    height: 25px;
+    margin-bottom: 7px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 2px;
+}
+
+ul li {
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+
+.timeline {
+    position: relative;
+    max-width: 85%;
+    margin: 0 auto;
+    padding: 10px;
+
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: black;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.timeline-event {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.timeline-event:nth-child(odd) .timeline-content {
+    margin-left: 50%; /* Adjust to position on the right */
+    padding-left: 20px;
+    text-align: left;
+    right: 0; /* Add this to align to the right side */
+    left: auto; /* Reset the left property */
+}
+
+.timeline-event:nth-child(even) .timeline-content {
+    margin-right: 45px; /* Adjust to position on the left */
+    padding-right: 20px;
+    text-align: right;
+    left: 0; /* Add this to align to the left side */
+    right: auto; /* Reset the right property */
+}
+
+.timeline-content {
+    position: relative;
+    width: 50%;
+    background: white;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px dotted #333;
+}
+
+.timeline-content::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: black;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    border-radius: 2px;
+}
+
+.timeline-event:nth-child(odd) .timeline-content::after {
+    left: -7px; /* Adjust the pseudo-element to point leftwards */
+    right: auto;
+}
+
+.timeline-event:nth-child(even) .timeline-content::after {
+    right: -7px; /* Adjust the pseudo-element to point rightwards */
+    left: auto;
+}
