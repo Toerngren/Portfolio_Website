@@ -9,8 +9,15 @@ a {
     text-decoration: none;
 }
 
+h1 {
+    color: #333;
+    text-align: left;
+    margin: 10px 65px 0px;
+    font-size: 50px;
+}
+
 #h1-LandingPage:hover, #h1-LandingPage:focus {
-    color: #ce3d04;
+    color: #df9412;
 }
 
 #h1-LandingPage {
@@ -28,7 +35,7 @@ a {
     text-align: left;
     margin: 10px 65px 0px;
     font-size: 20px;
-    width: 50%;
+    width: 60%;
     font-style: italic;
 }
 
@@ -81,7 +88,6 @@ a {
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
-
 .nav-link.active {
     font-weight: bold;
 }
@@ -89,15 +95,21 @@ a {
 #site-footer {
     background-color: #333;
     color: white;
-    position: absolute;
+    position: fixed;
     bottom: 0;
+    left: 0; /* Ensures the footer extends from the left edge */
     width: 100%;
     padding: 5px;
 }
 
+#site-footer {
+    z-index: 1000; /* Ensures the footer stays on top of other content */
+}
+
 body {
-    background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), url('scr/lindholmen.jpg') no-repeat center center fixed;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), url('scr/pexels-pixabay-59873.jpg') no-repeat center center fixed;
     background-size: cover;
+    padding-bottom: 50px; /* Adjust based on the actual height of your footer */
 }
 
 form {
@@ -150,5 +162,62 @@ input[type="submit"]:hover {
     background-color: white;
     color: black;
     border-radius: 0 10px 10px 0; /* Rounded corners on the right side */
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 10px 65px 0px;
+    background-color: whitesmoke;
+    border: whitesmoke;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.gallery-item {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding-top: 100%; /* This ensures a 1:1 aspect ratio */
+}
+
+.gallery-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This will cover the area, cropping the image if necessary */
+    transition: transform 0.3s ease;
+}
+
+@media (max-width: 600px) {
+    .image-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.gallery-item img:hover {
+    transform: scale(1.1);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1;
 }
 

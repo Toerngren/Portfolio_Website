@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
         <ul>
             <li><a href="index.html" class="nav-link">Home</a></li>
             <li><a href="about.html" class="nav-link">About</a></li>
-            <li><a href="skills.html" class="nav-link">Skills</a></li>
+            <li><a href="gallery.html" class="nav-link">Gallery</a></li>
             <li><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
     </nav>
