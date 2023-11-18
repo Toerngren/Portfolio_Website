@@ -4,3 +4,14 @@
 <a href="https://www.flaticon.com/free-icons/project" title="project icons">Project icons created by Freepik - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/schedule" title="schedule icons">Schedule icons created by Freepik - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/work" title="work icons">Work icons created by Freepik - Flaticon</a>
+
+<a href="https://www.flaticon.com/free-icons/tweet" title="tweet icons">Tweet icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/instagram-logo" title="instagram logo icons">Instagram logo icons created by Laisa Islam Ani - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/whatsapp" title="whatsapp icons">Whatsapp icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/brands-and-logotypes" title="brands and logotypes icons">Brands and logotypes icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/slack" title="slack icons">Slack icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/youtube" title="youtube icons">Youtube icons created by Roundicons - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/question" title="question icons">Question icons created by Arslan Haider - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/link" title="link icons">Link icons created by Freepik - Flaticon</a>
+

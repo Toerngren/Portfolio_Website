@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     let navbar = `
     <nav class="menu-bar">
         <ul>
@@ -12,8 +12,33 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let footer = `
     <footer id="site-footer">
+    <div class="footer-tooper">
+    <p>Let's Connect!</p>
+    </div>
+    <div class="footer-social">
+        <a href="http://Linkedin.com" target="_blank">
+            <img src="scr/linkedin.png" alt="Linkedin" />
+        </a>
+        <a href="http://twitter.com" target="_blank">
+            <img src="scr/twitter.png" alt="X" />
+        </a>
+        <a href="http://instagram.com" target="_blank">
+            <img src="scr/instagram.png" alt="Instagram" />
+        </a>
+        <a href="http://slack.com" target="_blank">
+        <img src="scr/slack.png" alt="Slack" />
+        </a>
+        <a href="http://youtube.com" target="_blank">
+        <img src="scr/youtube.png" alt="YouTube" />
+        </a>
+        <a href="http://whatsapp.com" target="_blank">
+        <img src="scr/whatsapp.png" alt="Whatsapp" />
+        </a>
+    </div>
+    <div class="footer-bottom">
         <p>© 2023 All Rights Reserved.</p>
-    </footer>
+    </div>
+</footer>
     `;
 
     // Insert the navbar and footer HTML
@@ -26,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const currentPage = window.location.pathname.split('/').pop();
 
         navLinks.forEach(link => {
-            if(link.getAttribute('href') === currentPage) {
+            if (link.getAttribute('href') === currentPage) {
                 link.classList.add('active');
             }
         });

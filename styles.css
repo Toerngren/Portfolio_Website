@@ -108,20 +108,6 @@ ul {
     font-weight: bold;
 }
 
-#site-footer {
-    background-color: #333;
-    color: white;
-    position: fixed;
-    bottom: 0;
-    left: 0; /* Ensures the footer extends from the left edge */
-    width: 100%;
-    padding: 5px;
-}
-
-#site-footer {
-    z-index: 1000; /* Ensures the footer stays on top of other content */
-}
-
 body {
     background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), url('scr/pexels-pixabay-59873.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -325,3 +311,55 @@ ul li {
     right: -7px; /* Adjust the pseudo-element to point rightwards */
     left: auto;
 }
+
+#site-footer {
+    background-color: #333;
+    color: whitesmoke;
+    padding: 5px;
+    text-align: center;
+    position: fixed;
+    bottom: -60px;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: bottom 0.3s ease;
+    overflow: hidden;
+}
+
+#site-footer:hover {
+    bottom: 0;
+}
+
+.footer-social {
+    padding: 5px;
+    border-top: 1px solid #444;
+}
+
+.footer-social a {
+    margin: 0 5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.footer-social img {
+    width: 24px;
+    height: auto;
+    transition: opacity 0.3s ease;
+}
+
+.footer-social img:hover {
+    opacity: 0.7;
+}
+
+.footer-topper {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+
+}
+
+.footer-topper img {
+    width: auto;
+    height: 12px;
+}
+
