@@ -16,16 +16,19 @@
                 <h2>Send me a message!</h2>
             </div>
             <div class="postcard-back">
-                <div class="postcard-message">
-                    <textarea placeholder="Your Message..."></textarea>
-                </div>
+                <div class="postcard-intro">
+                    <p class="handwritten">For more info,<br> send me a message!</p>
+                    <img src="scr/pexels-diana-d-reinoso-76183.jpg" alt="Profile" class="postcard-image">
+                </div>                
                 <div class="postcard-address">
                     <img src="scr/stamp.png" alt="Stamp" class="postcard-stamp">
-                    <form id="contact-form" action="mailto:someone@example.com" method="post" enctype="text/plain">
-                        <input type="text" placeholder="Your Name" name="name" required>
-                        <input type="email" placeholder="Your Email" name="email" required>
+                    <form id="contact-form">
+                        <input type="email" placeholder="Your Email" name="email" id="email" required>
+                        <div class="postcard-message">
+                            <textarea placeholder="Your Message..." name="message" id="message"></textarea>
+                        </div>
                         <button type="submit">Send Message</button>
-                    </form>
+                    </form>                    
                 </div>
             </div>
         </div>

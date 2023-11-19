@@ -407,7 +407,6 @@ ul li {
     height: 100%;
     justify-content: space-between;
     align-items: flex-end;
-    padding: 25px;
     transform: rotateY(180deg);
     backface-visibility: hidden;
     border: 1px solid #ccc;
@@ -416,10 +415,9 @@ ul li {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-.postcard-message, .postcard-address {
-    width: 50%;
+.postcard-address {
+    width: 60%;
     align-self: flex-end; /* Align this div with the end of the flex container */
-    margin-top: auto;
 }
 
 .postcard-stamp {
@@ -433,15 +431,11 @@ ul li {
 
 .postcard-message textarea {
     width: 100%;
-    height: 250px; /* Adjust as needed */
+    min-height: 100px;
     margin: 0;
     border: 1px solid #ccc;
     border-radius: 5px;
     resize: none;
-}
-
-.postcard-address {
-    padding-left: 10px; /* Spacing between message and address form */
 }
 
 .postcard-front h2 {
@@ -457,7 +451,6 @@ ul li {
 
 #contact-form {
     width: 100%;
-    max-width: 450px;
     margin: auto;
     border: none;
     box-shadow: none;
@@ -483,3 +476,32 @@ ul li {
 #contact-form button:hover {
     background-color: #555;
 }
+
+.postcard-intro {
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    width: 170px;
+    padding: auto;
+    padding-top: 40px;
+}
+
+.postcard-intro img{
+    height: 120px;
+    width: 120px;
+    margin-top: 15px;
+    border-radius: 100px;
+    margin-left: 30px;
+}
+
+.handwritten {
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    transform: rotate(-10deg);
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+

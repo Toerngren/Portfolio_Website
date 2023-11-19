@@ -59,3 +59,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
     setNavLinkActive();
 });
+
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the default form submit action
+
+    var email = document.getElementById('email').value;
+    var message = document.getElementById('message').value;
+
+    var mailtoLink = 'mailto:someone@example.com?subject=Message from ' + email + '&body=' + encodeURIComponent(message);
+
+    window.location.href = mailtoLink; // Open the default mail client with the constructed mailto link
+});
+
