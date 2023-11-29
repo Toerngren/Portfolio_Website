@@ -94,8 +94,8 @@ ul {
 }
 
 .menu-bar a::first-letter {
-    /*font-weight: bold; */
-    /*color: rgb(199, 85, 14); */
+    font-weight: bold;
+    color: rgb(199, 85, 14);
 }
 
 .menu-bar a:hover {
