@@ -15,4 +15,5 @@
 <a href="https://www.flaticon.com/free-icons/question" title="question icons">Question icons created by Arslan Haider - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/link" title="link icons">Link icons created by Freepik - Flaticon</a>
 <a href="https://www.flaticon.com/free-stickers/stamp" title="stamp stickers">Stamp stickers created by vectorsmarket15 - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/gmail" title="gmail icons">Gmail icons created by Pixel perfect - Flaticon</a>
 
