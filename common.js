@@ -34,9 +34,9 @@ document.addEventListener('DOMContentLoaded', function () {
         <a href="http://whatsapp.com" target="_blank">
         <img src="scr/whatsapp.png" alt="Whatsapp" />
         </a>
-        <a href="contact.html#contact-form" target="_blank">
-        <img src="scr/gmail.png" alt="Contact" />
-    </a>
+        <a href="contact.html#contact-form">
+            <img src="scr/gmail.png" alt="Contact" />
+        </a>
     </div>
     <div class="footer-bottom">
         <p>© 2023 All Rights Reserved.</p>
