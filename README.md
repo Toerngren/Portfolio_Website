@@ -1,6 +1,6 @@
 # Portfolio Website for a Fictive Photographer
 
-# Advanced Personal Portfolio - Lab 1: HTML & CSS
+## Advanced Personal Portfolio - Lab 1: HTML & CSS
 Course: DA558A HT23 JavaScript for Web Development
 
 ## Project Overview
